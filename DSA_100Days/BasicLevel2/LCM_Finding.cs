@@ -13,13 +13,13 @@ namespace DSA_100Days.Day2
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the number 1:");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num1 = Convert.ToInt32(Console.ReadLine()); 
 
             Console.WriteLine("Enter the number 2:");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine()); 
 
             int lcm = 1;
-            for(int i=1; i<=num1*num2; i++)
+            for(int i=1; i<=num1*num2; i++) 
             {
                 if(i%num1==0 && i%num2==0)
                 {
