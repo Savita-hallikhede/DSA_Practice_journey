@@ -5,7 +5,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DSA_100Days.DuplicateCharechters.RemovingDuplicate_M2</StartupObject>
+    <StartupObject>DSA_100Days.Collection_NonGeneric_Hashtable.FindSymmetricDiffrence</StartupObject>
   </PropertyGroup>
 
 </Project>

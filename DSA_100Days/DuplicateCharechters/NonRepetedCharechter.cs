@@ -28,8 +28,7 @@ namespace DSA_100Days.DuplicateCharechters
                 if (count == 1)
                 {
                     Console.WriteLine("the first non-repeated charechter is " + str[i]);
-                    break;
-
+                   
                 }
             }
         }

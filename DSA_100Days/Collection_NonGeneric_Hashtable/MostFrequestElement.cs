@@ -31,8 +31,8 @@ namespace DSA_100Days.Collection_NonGeneric_Hashtable
                 }
             }
 
-            int MostFrequency = 0;
-            int MostFrequentElement = 0;
+            int MostFrequency = 0;//value
+            int MostFrequentElement = 0;//key
 
            //foreach(var i in ht.Keys)
            //{

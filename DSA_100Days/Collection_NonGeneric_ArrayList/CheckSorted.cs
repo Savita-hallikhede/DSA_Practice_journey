@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DSA_100Days.Collection_NonGeneric_ArrayList
 {
-    //
+    
     internal class CheckSorted
     {
         public static void Main(string[] args)

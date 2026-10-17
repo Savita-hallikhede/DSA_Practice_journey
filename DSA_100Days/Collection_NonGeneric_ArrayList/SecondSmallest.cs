@@ -12,28 +12,31 @@ namespace DSA_100Days.Collection_NonGeneric_ArrayList
     {
         public static void Main(string[] args)
         {
-              
-        
             ArrayList list = new ArrayList()
-            {
-                22,43,52,66,87,9,21,92
-            };
+        {
+            1, 22, 33, 44, 22, 33, 22
+        };
 
-            int smallest = Convert.ToInt32(list[0]);
-            int secondSmallest = Convert.ToInt32(list[0]);
+            int smallest = int.MaxValue;
+            int secsmallest = int.MaxValue;
 
             for (int i = 0; i < list.Count; i++)
             {
                 int value = Convert.ToInt32(list[i]);
+
                 if (value < smallest)
                 {
-                    secondSmallest = smallest;
+                    secsmallest = smallest;
                     smallest = value;
+                }
+                else if (value > smallest && value < secsmallest)
+                {
+                    secsmallest = value;
                 }
             }
 
-            Console.WriteLine("smallest value:" + smallest);
-            Console.WriteLine("Second smallest value:" + secondSmallest);
+            Console.WriteLine("Smallest: " + smallest);
+            Console.WriteLine("Second smallest: " + secsmallest);
         }
     }
 }
