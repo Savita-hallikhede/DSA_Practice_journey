@@ -26,7 +26,7 @@ namespace DSA_100Days.HashTableWithArrayList
                 ht[i] = true;
             }
 
-            for(int i=0; i<=list.Count; i++)
+            for(int i=1; i<=list.Count; i++)
             {
                 if (!ht.Contains(i))
                 {

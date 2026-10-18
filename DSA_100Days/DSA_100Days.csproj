@@ -6,7 +6,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DSA_100Days.Collection_NonGeneric_Hashtable.FindSymmetricDiffrence</StartupObject>
+    <StartupObject>DSA_100Days.HashTableWithArrayList.MultipleMissing</StartupObject>
   </PropertyGroup>
 
 </Project>
