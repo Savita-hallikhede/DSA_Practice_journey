@@ -12,12 +12,13 @@ namespace DSA_100Days.Hastable_tricky
     {
         public static void Main(string[] args)
         {
-            int[] arr = { 1, 2, -3, 4, 5 };
+            int[] arr = {4,-2,1,-3,5};
             int target = 0;
 
-            Hashtable ht = new Hashtable();
+            
             for(int i=0; i<arr.Length; i++)
             {
+                Hashtable ht = new Hashtable();
 
                 for (int j = i+1; j < arr.Length; j++)
                 {
@@ -25,12 +26,12 @@ namespace DSA_100Days.Hastable_tricky
 
                     if(ht.ContainsKey(needed))
                     {
-                        Console.WriteLine(needed + "+" + arr[i] + "+" + arr[j] + "=" + target);
+                        Console.WriteLine(needed + "," + arr[i] + "," + arr[j]);
                         break;
                     }
                     else
                     {
-                        ht.Add(arr[j], 1);
+                        ht.Add(arr[j], 1);//2,1,-1,
                     }
                 }
             }

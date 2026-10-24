@@ -12,22 +12,23 @@ namespace DSA_100Days.Hastable_tricky
     {
         public static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 3, 4, 5 };
-            int target = 10;
+            int[] arr = {2,-1,0,-2,1,3};
+            int target = 2;
 
-            Hashtable ht = new Hashtable();
+            
 
-            for(int i=0; i<arr.Length; i++)
+            for(int i=0; i<arr.Length-3; i++)
             {
-                for(int j=i+1; j<arr.Length; j++)
+                for(int j=i+1; j<arr.Length-2; j++)
                 {
+                    Hashtable ht = new Hashtable();
                     for (int k = j + 1; k < arr.Length; k++)
                     {
-                        int needed = arr[i] - arr[j] - target;
+                        int needed = target - arr[i] - arr[j] - arr[k];
 
                         if (ht.ContainsKey(needed))
                         {
-                            Console.WriteLine(needed + "+" + arr[i] + "+" + arr[j] + "+" + arr[k] + "=" + needed);
+                            Console.WriteLine(needed + "," + arr[i] + "," + arr[j] + "," + arr[k] );
                         }
                         else
                         {

@@ -12,7 +12,7 @@ namespace DSA_100Days.Hastable_tricky
     {
         public static void Main(string[] args)
         {
-            int[] arr = { 2, 7, 11, 15 };
+            int[] arr = { 2, 7, 11, 15, 2,7};
             int target = 0;
 
             Hashtable ht = new Hashtable();
@@ -21,10 +21,10 @@ namespace DSA_100Days.Hastable_tricky
             {
                 int needed = 0 - i;
 
-                if(ht.ContainsKey(needed))
+                if(ht.ContainsKey(i))
                 {
-                    Console.WriteLine(needed + " + " + i + " = " + "= 0");
-                    break;
+                    Console.WriteLine(needed + " + " + i + " = " + "0");
+                    
                 }
                 else
                 {
