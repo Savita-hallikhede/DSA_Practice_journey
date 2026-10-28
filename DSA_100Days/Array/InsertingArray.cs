@@ -19,10 +19,10 @@ namespace DSA_100Days.Array
 
             for(int i=0; i<position; i++)
             {
-                newArray[i] = arr1[i];
+                newArray[i] = arr1[i]; // 1,2,3,4
             }
 
-            newArray[position] = element;   
+            newArray[position] = element;   // 1,2,3,4,5
 
             for(int i=position; i<arr1.Length; i++)
             {

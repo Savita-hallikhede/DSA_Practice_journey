@@ -6,7 +6,19 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DSA_100Days.Hastable_tricky.SumOfGivenSubarry</StartupObject>
+    <StartupObject>DSA_100Days.Linked_List.Level_1.Find</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="S:\DSA_100Days\DSA_100Days\Linked_List\Level_1\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="S:\DSA_100Days\DSA_100Days\Linked_List\Level_1\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Linked_List\Level2\" />
+  </ItemGroup>
 
 </Project>
