@@ -16,6 +16,7 @@ namespace DSA_100Days.Linked_List.Level2
             {
                 this.val = val;
                 this.next = null;
+               
             }
 
         }

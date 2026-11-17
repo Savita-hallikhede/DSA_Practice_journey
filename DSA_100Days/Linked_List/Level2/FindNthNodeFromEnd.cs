@@ -7,6 +7,7 @@ using System.Xml.Linq;
 
 namespace DSA_100Days.Linked_List.Level2
 {
+    //2. Find the Nth node from the end of a Linked List.
     internal class FindNthNodeFromEnd
     {
         //2. Find the Nth node from the end of a Linked List.
@@ -41,7 +42,7 @@ namespace DSA_100Days.Linked_List.Level2
                 else
                 {
                     first = first.next;
-                }
+                }  
                    
             }
           

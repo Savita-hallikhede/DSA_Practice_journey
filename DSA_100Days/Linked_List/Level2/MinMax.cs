@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace DSA_100Days.Linked_List.Level2
 {
+    //3. Find the maximum and minimum values in a Linked List.
+
     internal class MinMax
     {
         public class ListNode
