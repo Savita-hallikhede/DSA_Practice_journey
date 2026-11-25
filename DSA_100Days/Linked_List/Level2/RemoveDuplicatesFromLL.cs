@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DSA_100Days.Linked_List.Level2
 {
-    internal class FindDuplicateElement
+    internal class RemoveDuplicatesFromLL
     {
         public class ListNode
         {
@@ -20,26 +20,26 @@ namespace DSA_100Days.Linked_List.Level2
             }
         }
 
-        public static ListNode FindingDuplicate(ListNode head)
+        public static ListNode RemoveDuplicates(ListNode head)
         {
             ListNode current = head;
+           
 
-            while (current != null)
+            while(current!= null)
             {
-                ListNode runner = current;
+                ListNode run = current;
 
-                while (runner.next != null)
+                while(run.next != null)
                 {
-                    if (runner.next.val == current.val)
+                    if (run.next.val == current.val)
                     {
-                        runner.next = runner.next.next;
+                        run.next = run.next.next;
                     }
                     else
                     {
-                        runner = runner.next;
+                        run = run.next;
                     }
                 }
-
                 current = current.next;
             }
             return head;
@@ -47,30 +47,30 @@ namespace DSA_100Days.Linked_List.Level2
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the numbers:");
-            int[] value = System.Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
+            int[] arr = System.Array.ConvertAll(Console.ReadLine().Split(' '), int.Parse);
 
-            ListNode head = new ListNode(value[0]);
+
+            ListNode head = new ListNode(arr[0]);
+
             ListNode temp = head;
-
-            for (int i = 1; i < value.Length; i++)
+            for(int i=1; i<arr.Length; i++)
             {
-                temp.next = new ListNode(value[i]);
+                temp.next = new ListNode(arr[i]);
                 temp = temp.next;
             }
 
-            head = FindingDuplicate(head);
-            Console.WriteLine("Linked List after removing duplicates:");
+            head = RemoveDuplicates(head);
 
             temp = head;
-            while (temp != null)
+
+            while(temp != null)
             {
                 Console.Write(temp.val + " ");
                 temp = temp.next;
             }
 
-            Console.WriteLine("null");
+
         }
-    
+
     }
 }

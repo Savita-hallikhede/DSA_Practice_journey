@@ -6,7 +6,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <StartupObject>DSA_100Days.Linked_List.Level2.RemoveNthNodeFromEnd_M2</StartupObject>
+    <StartupObject>DSA_100Days.Linked_List.Level2.FindStartingNodeOfLLCycle</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
